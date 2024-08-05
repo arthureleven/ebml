@@ -11,7 +11,7 @@ defmodule EBMLTest do
       TimestampScale: 1_000_000
     ],
     [
-      Duration: 13346.0,
+      Duration: 13_346.0,
       SegmentUUID: <<78, 248, 10, 99, 25, 1, 184, 195, 70, 86, 239, 29, 198, 224, 82, 246>>,
       WritingApp: "Lavf57.83.100",
       MuxingApp: "Lavf57.83.100",
