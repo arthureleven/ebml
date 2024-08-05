@@ -8,7 +8,7 @@ defmodule EBML.Vint do
     do:
       1..8
       |> Enum.find_value(fn bit ->
-        if (byte &&& (1 <<< (8 - bit))) > 0, do: bit
+        if (byte &&& 1 <<< (8 - bit)) > 0, do: bit
       end)
 
   @spec get_vint_data(integer, 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8) :: non_neg_integer
